@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Link your Tools </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <style type="text/css">
+        .box1 {
+            background-color: beige;
+            height: 200px;
+            color: black;
+            text-align: center;
+            vertical-align: middle;
+            margin-top: -1%;
+            margin-bottom: 2%
+        }
+        .item1{
+            float: left;
+            height: 250px;
+            width: 250px;
+            align-content: center;
+            //border: 2px solid green;
+
+        }
+
+        .bs-example{
+            height: 50px;
+        }
+
+        .i1{
+            /*vertical-align: middle;*/
+            width: 200px;
+            height: 150px;
+            margin-left: 2%;
+            margin-bottom: 2%;
+            margin-top: 2%;
+        }
+        .container1
+        {
+            margin-left: 3%;
+            margin-right: 2%;
+            margin-bottom: 5%;
+        }
+        .c1{
+            margin-left: 48%;
+            width: 100px;
+            height: 50px;
+            align-content: center;
+        }
+        .button-provision
+        {
+            float: right;
+            align: right;
+            //background-color:lightblue;
+            color: red;
+            font-size: 20px;
+            height:40px;
+            width:200px;
+            text-align-all: center;
+
+        }
+    </style>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
+</head>
+
+<body>
+
+
+<header>
+
+
+    <div class="bs-example">
+        <nav class="navbar navbar-inverse navbar-static">
+            <div class="navbar-header">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".js-navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <ul class="nav nav-tabs">
+                    <a class="navbar-brand" href="#/"><span>Project Liberty @ </span>IBM</a>
+                    <li><a class="navbar-brand" href="#">Home</a></li>
+                    <!--<li><a href="#">Profile</a></li>-->
+                    <li class="dropdown">
+                        <a class="navbar-brand" href="#" data-toggle="dropdown" class="dropdown-toggle"> Toolchain <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li class="col-sm-6 auto-fill">
+                            <li><a href="#">Slack</a></li>
+                            <li><a href="#">JIRA</a></li>
+                            <li><a href="../../toolchain/jenkins/jenkinInfo.html">Jenkins</a></li>
+                            <li><a href="#">UCD</a></li>
+                            <li><a href="#">Artifactory</a></li>
+                            <li><a href="#">GitLab</a></li>
+                            </li>
+                            <li class="divider"></li>
+                            <li><a href="toolchain/linktools/page.html">Link your Tools</a></li>
+                            <li class="divider"></li>
+                            <li class="col-sm-4">
+                            <li><a href="#">Tool Status</a></li>
+                            <li><a href="#">DNS Help</a></li>
+                            <li><a href="#">Create a ticket</a></li>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+
+                        <a class="navbar-brand" href="#" data-toggle="dropdown" class="dropdown-toggle"> Compliance <b class="caret"></b></a>
+
+                        <ul class="dropdown-menu">
+                            <li><a href="#">OpenSource</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Pedigree Check</a></li>
+                            <li><a href="#">Clearance CLI Tool</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a class="navbar-brand" href="#" data-toggle="dropdown" class="dropdown-toggle"> Help <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li class="col-sm-6 auto-fill">
+                            <li><a href="#"> Training Materials </a></li>
+                            <li><a href="#"> Documentation </a></li>
+                            <li><a href="#"> FAQ </a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a class="navbar-brand" href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                <li><a class="navbar-brand" href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
+
+            <!--  <ul class="nav navbar-nav navbar-right">
+                  <li ng-hide="USER"><a ng-click="signInW3ID()"><span class="fa fa-user"></span> &nbsp;Sign In</a></li>
+                  <li ng-show="USER" class="dropdown dropdown-large"> <a href="" class="dropdown-toggle" ng-cloak>Hi, {{USER.firstName}}</a>
+                      <ul class="dropdown-menu dropdown-menu-large row">
+                          <li class="col-sm-6 auto-fill">
+                              <ul>
+                                  <li><a ng-click="samlLogout()">Logout</a></li>
+                              </ul>
+                          </li>
+                      </ul>
+                  </li>
+              </ul>-->
+        </nav>
+    </div>
+</header>
+
+
+<box>
+    <div class="box1">
+        <div style="font-size: 50px; font-weight: bold; color: green">
+            <h2><br>Link your Tools<br></h2>
+        </div>
+
+        <div style="font-size: 30px; color: green">
+            <p><br>It's simple and easy<br></p>
+        </div>
+    </div>
+</box>
+
+<div class="container1">
+
+    <div class="item1">
+        <img class="i1" src="../../assets/images/JIRA.png">
+        <input type="checkbox" class="c1">
+    </div>
+
+    <div class="item1">
+        <img class="i1" src="../../assets/images/gitlab.png">
+        <input type="checkbox" class="c1" >
+    </div>
+
+    <div class="item1">
+        <img src="../../assets/images/jenkins.png" class="i1">
+        <input type="checkbox" class="c1">
+    </div>
+
+    <div class="item1">
+        <img class="i1" src="../../assets/images/sonar.png">
+        <input type="checkbox" class="c1">
+    </div>
+
+    <div class="item1">
+        <img class="i1" src="../../assets/images/artifactory_logo_720.png">
+        <input type="checkbox" class="c1">
+    </div>
+
+    <div class="item1">
+        <img class="i1" src="../../assets/images/ucd.jpg">
+        <input type="checkbox" class="c1">
+    </div>
+
+</div>
+<br>
+<br>
+<div style="margin-left: 70%;margin-bottom: 5%">
+    <button>
+        <div class="button-provision"> Raise request </div>
+     </button>
+</div>
+
+<footer>
+    <nav id="footnav" class="navbar" role="navigation">
+        <nav class="navbar navbar-inverse navbar-static">
+            <div class="container">
+
+                <div class="navbar-header" style="...">
+                    <ul class="nav navbar-nav" style="vertical-align: middle;">
+                        <li><a class="navbar-brand" class="page-scroll ahreffooter">Privacy</a></li>
+                        <li><a class="navbar-brand" class="page-scroll ahreffooter">Accessibility</a></li>
+                        <li><a class="navbar-brand" class="page-scroll ahreffooter">IBM.com </a></li>
+                        <!-- <li><a class="page-scroll ahreffooter">Privacy Policy</a></li>
+                         <li><a class="page-scroll ahreffooter">Contact Us</a></li> -->
+                    </ul>
+                </div>
+
+
+                <div class="navbar-right navbar-main-collapse">
+                    <ul class="nav navbar-nav" style="vertical-align: middle;">
+                        <div id="copy" class="navbar-brand">
+                            <p>  @GBS Cloud All rights reserved | powered By <img src="../assets/images/1.jpg" width="50" height="30" alt=""> </p>
+                        </div>
+                        <!--<li> <img src="../LandingPage/images/4.jpg" alt="..."  style="margin-top: 13px;"></li>-->
+                    </ul>
+                </div>
+            </div>
+
+        </nav>
+    </nav>
+</footer>
+</body>
+</html>

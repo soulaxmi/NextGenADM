@@ -1,0 +1,336 @@
+<!doctype html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Project Liberty @ IBM</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <style type="text/css">
+        .box1 {
+            background-color: beige;
+            height: 250px;
+            color: black;
+            text-align: center;
+            vertical-align: middle;
+            margin-top: -1%;
+        }
+
+        .container-carousel {
+            background-color: Thistle;
+            text-align: center;
+            vertical-align: middle;
+        }
+        .bs-example{
+            height: 50px;
+        }
+        .box2
+        {
+            background-color: #bce8f1;
+            height: 280px;
+            color: black;
+            text-align: center;
+            vertical-align: middle;
+        }
+        .button-secondary
+        {background-color:coral;
+            display:block;
+            width:190px;
+            height:45px;
+            color:#ffffff;
+            text-align-all: center;
+
+        }
+        .tooltrain-image
+                {
+                    width: 300px;
+                    height: 203px;
+                    margin-left: 38%;
+                    margin-bottom: 2%;
+                    margin-top: 8%;
+                }
+    </style>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
+</head>
+
+
+<page ng-app="LibertyApp" ng-controller="MainController">
+<!--[if lte IE 8]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser.
+    Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<!-- Add your site or application content here -->
+
+<header>
+
+
+            <div class="bs-example">
+                <nav class="navbar navbar-inverse navbar-static">
+                        <div class="navbar-header">
+                            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".js-navbar-collapse">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+
+                            <ul class="nav nav-tabs">
+                                    <a class="navbar-brand" href="#/"><span>Project Liberty @ </span>IBM</a>
+                                <li><a class="navbar-brand" href="#">Home</a></li>
+                    <!--<li><a href="#">Profile</a></li>-->
+                                <li class="dropdown">
+                                  <a class="navbar-brand" href="#" data-toggle="dropdown" class="dropdown-toggle"> Toolchain <b class="caret"></b></a>
+                                  <ul class="dropdown-menu">
+                                    <li class="col-sm-6 auto-fill">
+                                      <li><a href="#">Slack</a></li>
+                                      <li><a href="#">JIRA</a></li>
+                                      <li><a href="toolchain/jenkins/jenkinInfo.html">Jenkins</a></li>
+                                      <li><a href="#">UCD</a></li>
+                                      <li><a href="#">Artifactory</a></li>
+                                      <li><a href="#">GitLab</a></li>
+                                      </li>
+                                      <li class="divider"></li>
+                                      <li><a href="toolchain/linktools/page.html">Link your Tools</a></li>
+                                      <li class="divider"></li>
+                                      <li class="col-sm-4">
+                                        <li><a href="#">Tool Status</a></li>
+                                        <li><a href="#">DNS Help</a></li>
+                                        <li><a href="#">Create a ticket</a></li>
+                                      </li>
+                                  </ul>
+                                </li>
+                                <li class="dropdown">
+
+                                 <a class="navbar-brand" href="#" data-toggle="dropdown" class="dropdown-toggle"> Compliance <b class="caret"></b></a>
+
+                                 <ul class="dropdown-menu">
+                                   <li><a href="#">OpenSource</a></li>
+                                     <li class="divider"></li>
+                                      <li><a href="#">Pedigree Check</a></li>
+                                      <li><a href="#">Clearance CLI Tool</a></li>
+                                  </ul>
+                                </li>
+
+                                <li class="dropdown">
+                                    <a class="navbar-brand" href="#" data-toggle="dropdown" class="dropdown-toggle"> Help <b class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                                        <li class="col-sm-6 auto-fill">
+                                        <li><a href="#"> Training Materials </a></li>
+                                        <li><a href="#"> Documentation </a></li>
+                                        <li><a href="#"> FAQ </a></li>
+                                    </ul>
+                                 </li>
+                            </ul>
+                        </div>
+                    <div style="margin-left: 2%">
+                   <ul class="nav navbar-nav navbar-right">
+                        <li><a class="navbar-brand" href="#"><span class="glyphicon glyphicon-user"></span> </a></li>
+                        <li><a class="navbar-brand" href="#"><span class="glyphicon glyphicon-log-in"></span> Sign in</a></li>
+                    </ul>
+                     </div>
+
+              <!--  <ul class="nav navbar-nav navbar-right">
+                    <li ng-hide="USER"><a ng-click="signInW3ID()"><span class="fa fa-user"></span> &nbsp;Sign In</a></li>
+                    <li ng-show="USER" class="dropdown dropdown-large"> <a href="" class="dropdown-toggle" ng-cloak>Hi, {{USER.firstName}}</a>
+                        <ul class="dropdown-menu dropdown-menu-large row">
+                            <li class="col-sm-6 auto-fill">
+                                <ul>
+                                    <li><a ng-click="samlLogout()">Logout</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>-->
+            </nav>
+        </div>
+</header>
+
+<page>
+
+    <div class="container-carousel">
+
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            </ol>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" style="height: 400px" style="max-width: 100px">
+                <br>
+                <div class="item active" style="margin-left: 10px" >
+                    <div class="carousel-first">
+                    <div style="align: center">
+                        <img src="../assets/images/social_coding.png" alt="..." width="700" height="350" style="margin-left: 10px">
+                    </div>
+                    <div class="carousel-caption">
+                        <div class="flexbox-item-2" style="float: right">
+                            <h3 class="section-title"> FIRST ... </h3> <p>First_One_Description</p> <a href="https://w3-connections.ibm.com/communities/service/html/communitystart?communityUuid=d06ea150-371f-42e5-b229-3cc6922e7a94" class="button">
+                            <div class="button-primary"> First Link </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="item" style="margin-left: 10px">
+                    <div style="align: center">
+                        <img src="../assets/images/devops-analytics.png" alt="..." width="660" height="350" style="margin-left: 10px">
+                    </div>
+                    <div class="carousel-caption">
+                        <div class="flexbox-item-2" style="float: right">
+                            <h3 class="section-title"> SECOND ... </h3> <p> Second_One_Description </p> <a href="https://w3-connections.ibm.com/communities/service/html/communitystart?communityUuid=d06ea150-371f-42e5-b229-3cc6922e7a94" class="button">
+                            <div class="button-primary"> Second Link </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item" style="margin-left: 10px">
+                    <div style="align: center">
+                        <img src="../assets/images/bluemix_garage.png" alt="..." width="460" height="350" style="margin-left: 10px">
+                    </div>
+                    <div class="carousel-caption">
+                        <div class="flexbox-item-2" style="float: right">
+                            <h3 class="section-title"> THIRD ... </h3> <p> Third_One_Description </p> <a href="https://w3-connections.ibm.com/communities/service/html/communitystart?communityUuid=d06ea150-371f-42e5-b229-3cc6922e7a94" class="button">
+                            <div class="button-primary"> Third Link </div>
+                        </div>
+                    </div>
+                </div>
+                <!--<div class="item" style="margin-left: 10px">
+                    <div style="align: center">
+                    <img src="../LandingPage/images/bluemix_garage.png" alt="..." width="460" height="350" style="margin-left: 10px">
+                    </div>
+                    <div class="carousel-caption">
+                        <div class="flexbox-item-2">
+                            <h3 class="section-title"> THIRD ... </h3> <p> Third_One_Description </p> <div href="http://wicc4d-open.w3ibm.mybluemix.net/" target="_blank" class="button">
+                            <div class="button-primary"> Third Link </div>
+                        </div>
+                    </div>
+                </div>-->
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+        </div><!-- Carousel -->
+        </div>
+<!--
+        <div class="container">
+    <br>
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        </ol>
+    <!-- Wrapper for slides
+    <div class="carousel-inner" style="max-height: 500px" style="max-width: 100px">
+        <div class="item active" >
+            <img src="../LandingPage/images/social_coding.png" alt="...">
+            <div class="carousel-caption">
+                <h3>First Page</h3>
+            </div>
+        </div>
+        <div class="item">
+            <img src="../LandingPage/images/devops-analytics.png" alt="...">
+            <div class="carousel-caption">
+                <h3>Second Page</h3>
+            </div>
+        </div>
+        <div class="item">
+            <img src="../LandingPage/images/bluemix_garage.png" alt="...">
+            <div class="carousel-caption">
+                <h3>Third Page</h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- Controls
+    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
+</div> <!-- Carousel
+</div>  -->
+</page>
+
+<box>
+    <div>
+        <div class="box1">
+            <div>
+                <h2><br><br>Deliver Solutions Fast and in a Fundamentally Different Way</h2>
+            </div>
+
+            <div>
+                <p><br>Our culture of continuously removing technical debt, continuous build, integration, test, and delivery, coupled with experimentation and <br> continuous feedback from our clients, enables our teams to deliver the right capabilities faster without sacrificing quality.<br></p>
+            </div>
+        </div>
+
+  <div class="box2">
+        <div style="width: 1280px">
+
+            <div style="float:left">
+                <img class="tooltrain-image" src="../assets/images/tooltrain.gif" alt=""></img>
+            </div>
+            <div style="float: right">
+                <h2>Catching Your Toolchain</h2>
+                <p> A toolchain consists of a set of complementary and compatible tools<br> that when united together create synergy between developers and<br> production. To accelerate into the future you must catch a ride on a <br>toolchain.
+                </p>
+                <div style="margin-left: 2%">
+                    <div class="button-secondary">Let's Get Toolin</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+</box>
+<footer>
+
+    <nav id="footnav" class="navbar" role="navigation">
+        <nav class="navbar navbar-inverse navbar-static">
+            <div class="container">
+
+                    <div class="navbar-header" style="...">
+                        <ul class="nav navbar-nav" style="vertical-align: middle;">
+                            <li><a class="navbar-brand" class="page-scroll ahreffooter">Privacy</a></li>
+                            <li><a class="navbar-brand" class="page-scroll ahreffooter">Accessibility</a></li>
+                            <li><a class="navbar-brand" class="page-scroll ahreffooter">IBM.com </a></li>
+                            <!-- <li><a class="page-scroll ahreffooter">Privacy Policy</a></li>
+                             <li><a class="page-scroll ahreffooter">Contact Us</a></li> -->
+                        </ul>
+                    </div>
+
+
+                <div class="navbar-right navbar-main-collapse">
+                    <ul class="nav navbar-nav" style="vertical-align: middle;">
+                        <div id="copy" class="navbar-brand">
+                            <p>  @GBS Cloud All rights reserved | powered By <img src="../LandingPage/images/1.jpg" width="50" height="30" alt=""> </p>
+                        </div>
+                        <!--<li> <img src="../LandingPage/images/4.jpg" alt="..."  style="margin-top: 13px;"></li>-->
+                    </ul>
+                </div>
+            </div>
+
+        </nav>
+    </nav>
+
+</footer>
+</body>
+</html>
